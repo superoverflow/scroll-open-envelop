@@ -41,7 +41,9 @@ const Home: NextPage = () => {
         className="letter"
         style={{ y: letterYPos}}
         transition={{ duration: 2}}
-      />
+      >
+       ❤️
+      </motion.div>
       <motion.div
         className="envelop-lip-closed"
         style={{

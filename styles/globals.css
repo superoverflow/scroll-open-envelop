@@ -40,6 +40,9 @@ body {
   margin-left: -120px;
   background-color: rgb(249, 207, 207);
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .envelop-lip-closed {
