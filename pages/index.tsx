@@ -23,7 +23,7 @@ const Home: NextPage = () => {
   const letterYPos = useTransform(
     scrollYProgress,
     scrollKeyFrames,
-    [0, 0, 0, -800, -800]
+    [0, 0, 0, 0, -800]
   );
 
   return (
@@ -38,13 +38,6 @@ const Home: NextPage = () => {
     >
       <motion.div className="envelop-background" />
       <motion.div
-        className="letter"
-        style={{ y: letterYPos}}
-        transition={{ duration: 2}}
-      >
-       ❤️
-      </motion.div>
-      <motion.div
         className="envelop-lip-closed"
         style={{
           rotateX: envelopLidClosedDeg,
@@ -56,9 +49,17 @@ const Home: NextPage = () => {
           rotateX: envelopLidOpenedDeg,
         }}
       />
-      
+
       <motion.div className="envelop-bottom-left" />
       <motion.div className="envelop-bottom-right" />
+      <motion.div
+        className="letter"
+        style={{
+          y: letterYPos,
+        }}
+      >
+        ❤️
+      </motion.div>
     </motion.div>
   );
 };
